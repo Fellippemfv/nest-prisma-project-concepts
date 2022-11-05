@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "prisma.prisma",
+        "prisma.prisma-insider",
+        "esbenp.prettier-vscode",
+        "cweijan.vscode-mysql-client2"
+    ]
+}
