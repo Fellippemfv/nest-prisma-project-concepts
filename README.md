@@ -51,10 +51,10 @@ Para clonar e executar esta aplicação, você precisará do [Git](https://git-s
 
 ```bash
 # Clonar este repositório
-$ git clone https://github.com/Fellippemfv/prisma-project-movie-rentals.git
+$ git clone https://github.com/Fellippemfv/nest-prisma-project-concepts.git
 
 # Ir até a pasta criada
-$ cd prisma-project-movie-rentals
+$ cd nest-prisma-project-concepts
 
 # Instalar dependências
 $ npm install
