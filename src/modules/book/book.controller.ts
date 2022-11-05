@@ -7,7 +7,7 @@ import {
     Post,
     Put,
 } from "@nestjs/common";
-import { BookDTO } from "./book.dto";
+import { BookDTO } from "./dtos/book.dto";
 
 import { BookService } from "./book.service";
 
@@ -20,7 +20,7 @@ export class BookController {
         return this.bookService.create(data);
     }
 
-    @Get()
+    @Get(":all")
     async findAll() {
         return this.bookService.findAll();
     }

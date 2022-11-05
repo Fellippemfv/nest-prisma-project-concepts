@@ -8,4 +8,4 @@ import { PrismaService } from "../../database/PrismaService";
 
     providers: [BookService, PrismaService],
 })
-export class BookModule { }
+export class BookModule {}
