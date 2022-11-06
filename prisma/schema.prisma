@@ -26,5 +26,5 @@ model Book {
   description String
   bar_code    String @unique
 
-  @@map("book")
+  @@map("books")
 }

@@ -1,18 +1,20 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "src/database/PrismaService";
-import { BookDTO } from "./dtos/book.dto";
+import { CreateBookDto } from "./dto/create-book.dto";
+import { UpdateBookDto } from "./dto/update-book.dto";
 
 @Injectable()
-export class BookService {
+export class BooksService {
     constructor(private prisma: PrismaService) {}
-    async create(data: BookDTO) {
-        const bookExists = await this.prisma.book.findFirst({
+
+    async create(data: CreateBookDto) {
+        const bookAlreadyExists = await this.prisma.book.findFirst({
             where: {
                 bar_code: data.bar_code,
             },
         });
 
-        if (bookExists) {
+        if (bookAlreadyExists) {
             throw new Error("Book already exists");
         }
 
@@ -23,11 +25,25 @@ export class BookService {
         return book;
     }
 
-    async findAll() {
+    findAll() {
         return this.prisma.book.findMany();
     }
 
-    async update(id: string, data: BookDTO) {
+    async findOne(id: string) {
+        const bookExists = await this.prisma.book.findUnique({
+            where: {
+                id,
+            },
+        });
+
+        if (!bookExists) {
+            throw new Error("Book does not exists");
+        }
+
+        return bookExists;
+    }
+
+    async update(id: string, data: UpdateBookDto) {
         const bookExists = await this.prisma.book.findUnique({
             where: {
                 id,
