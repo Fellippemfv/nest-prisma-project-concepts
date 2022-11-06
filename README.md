@@ -1,18 +1,18 @@
 <h1 align="center"> Projeto - Conceitos de nest e prisma </h1>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Fellippemfv/prisma-project-movie-rentals">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Fellippemfv/nest-prisma-project-concepts">
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Fellippemfv/prisma-project-movie-rentals?color=red">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Fellippemfv/nest-prisma-project-concepts?color=red">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Fellippemfv/prisma-project-movie-rentals?color=yellow">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Fellippemfv/nest-prisma-project-concepts?color=yellow">
   
-  <a href="https://github.com/Fellippemfv/prisma-project-movie-rentals/commits/master">
-  	<img alt="last-commit" src="https://img.shields.io/github/last-commit/Fellippemfv/prisma-project-movie-rentals">
+  <a href="https://github.com/Fellippemfv/nest-prisma-project-concepts/commits/master">
+  	<img alt="last-commit" src="https://img.shields.io/github/last-commit/Fellippemfv/nest-prisma-project-concepts">
   </a>
 
-  <a href="https://github.com/Fellippemfv/prisma-project-movie-rentals/blob/master/LICENSE.md">
-  	<img alt="GitHub/license" src="https://img.shields.io/github/license/Fellippemfv/prisma-project-movie-rentals">
+  <a href="https://github.com/Fellippemfv/nest-prisma-project-concepts/blob/master/LICENSE.md">
+  	<img alt="GitHub/license" src="https://img.shields.io/github/license/Fellippemfv/nest-prisma-project-concepts">
   </a>
 </p>
 
