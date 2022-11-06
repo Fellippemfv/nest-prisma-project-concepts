@@ -99,10 +99,13 @@ $ npm run start:prod
 $ npx prisma studio
 ```
 
-##### Passo  4° - Para rodar a migration (Ela que vai gerar as tabelas no banco de dados).
+##### Passo  4° - Para rodar a migration (Ela que vai gerar as tabelas no banco de dados). E Usar seed (Ela que vai gerar os dados das tabelas).
 ```bash
 # Para criar tabelas
 $ npx prisma migrate dev
+
+# Para Criar dados para as tabelas
+$ npx prisma db seed
 ```
 
 ##### Para testar aplicação
