@@ -124,6 +124,6 @@ Abrir aplicativo inmsomnia e importar o arquivo que está dentro da pasta "inmso
 
 ## :memo: Licença
 
-Este projeto está sob a licença do MIT. Veja o [LICENSE](https://github.com/Fellippemfv/prisma-project-movie-rentals/blob/master/LICENSE.md) para mais informação.
+Este projeto está sob a licença do MIT. Veja o [LICENSE](https://github.com/Fellippemfv/nest-prisma-project-concepts/blob/master/LICENSE.md) para mais informação.
 
 ---
