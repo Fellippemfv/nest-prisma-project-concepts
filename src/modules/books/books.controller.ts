@@ -39,14 +39,14 @@ export class BooksController {
         return this.booksService.findOne(id);
     }
 
-    @ApiCreatedResponse({ type: BookEntity })
     @Put(":id")
+    @ApiCreatedResponse({ type: BookEntity })
     async update(@Param("id") id: string, @Body() data: UpdateBookDto) {
         return this.booksService.update(id, data);
     }
 
-    @ApiCreatedResponse({ type: BookEntity })
     @Delete(":id")
+    @ApiCreatedResponse({ type: BookEntity })
     async delete(@Param("id") id: string) {
         return this.booksService.delete(id);
     }
