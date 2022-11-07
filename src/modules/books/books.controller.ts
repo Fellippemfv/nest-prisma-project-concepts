@@ -6,6 +6,7 @@ import {
     Param,
     Delete,
     Put,
+    UseFilters,
 } from "@nestjs/common";
 
 import { BooksService } from "./books.service";
@@ -15,9 +16,11 @@ import { UpdateBookDto } from "./dto/update-book.dto";
 
 import { ApiCreatedResponse, ApiTags } from "@nestjs/swagger";
 import { BookEntity } from "./entities/book.entity";
+import { PrismaClientExceptionFilter } from "src/prisma-client-exception/prisma-client-exception.filter";
 
 @Controller("books")
 @ApiTags("books")
+@UseFilters(PrismaClientExceptionFilter)
 export class BooksController {
     constructor(private readonly booksService: BooksService) {}
 
